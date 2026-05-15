@@ -1,0 +1,8 @@
+{
+  "name": "Dorcia-Serwis - Naprawa Konsol i Elektroniki",
+  "description": "Profesjonalny serwis konsol (PS4, PS5, Xbox, Switch), padów oraz elektroniki w Łodzi. Szybkie terminy, uczciwe ceny i wysyłka z całej Polski.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
