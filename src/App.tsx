@@ -127,17 +127,17 @@ export default function App() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="text-5xl sm:text-7xl font-extrabold leading-[1.05] text-text-main tracking-tighter mb-8"
+              className="text-4xl sm:text-6xl lg:text-7xl font-extrabold leading-[1.1] text-text-main tracking-tighter mb-6 px-2"
             >
-              PROFESJONALNY <br />
-              <span className="text-accent">SERWIS KONSOL</span>
+              PROFESJONALNY <br className="hidden sm:block" />
+              <span className="text-accent underline decoration-accent/20 underline-offset-8">SERWIS KONSOL</span>
             </motion.h1>
             
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
-              className="text-lg text-text-muted mb-10 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-medium"
+              className="text-base sm:text-lg text-text-muted mb-10 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-medium px-4"
             >
               Specjalistyczna naprawa elektroniki i konsol w Łodzi. 
               Precyzja, doświadczenie i autentyczna pasja do hardware'u. 
@@ -148,12 +148,12 @@ export default function App() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start"
+              className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start px-4 w-full"
             >
-              <a href="#kontakt" className="btn-primary py-4 px-10 w-full sm:w-auto">
+              <a href="#kontakt" className="btn-primary py-4 px-10 w-full sm:w-auto text-center">
                 KONTAKT
               </a>
-              <a href="#uslugi" className="btn-secondary px-10 py-4 w-full sm:w-auto text-center uppercase text-sm tracking-widest">
+              <a href="#uslugi" className="btn-secondary px-10 py-4 w-full sm:w-auto text-center uppercase text-xs tracking-widest">
                 ZAKRES USŁUG
               </a>
             </motion.div>
@@ -162,7 +162,7 @@ export default function App() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6 }}
-              className="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-4"
+              className="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-y-6 gap-x-2 px-2"
             >
               {[
                 { icon: Truck, label: "Wysyłka Cała PL" },
@@ -170,9 +170,9 @@ export default function App() {
                 { icon: ShieldCheck, label: "Pewna Gwarancja" },
                 { icon: CheckCircle2, label: "Status Naprawy" }
               ].map((item, i) => (
-                <div key={i} className="flex items-center gap-2">
-                  <item.icon className="text-accent w-4 h-4" />
-                  <span className="text-[10px] font-bold text-text-muted uppercase tracking-widest leading-none">{item.label}</span>
+                <div key={i} className="flex flex-col sm:flex-row items-center gap-2 justify-center lg:justify-start text-center sm:text-left">
+                  <item.icon className="text-accent w-4 h-4 shrink-0" />
+                  <span className="text-[9px] xs:text-[10px] font-bold text-text-muted uppercase tracking-widest leading-tight">{item.label}</span>
                 </div>
               ))}
             </motion.div>
