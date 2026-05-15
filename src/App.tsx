@@ -88,7 +88,7 @@ export default function App() {
           </div>
 
           {/* Mobile Toggle */}
-          <button className="md:hidden text-blue-deep" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          <button className="md:hidden text-accent" onClick={() => setIsMenuOpen(!isMenuOpen)}>
             {isMenuOpen ? <X /> : <Menu />}
           </button>
         </div>
@@ -98,28 +98,28 @@ export default function App() {
           <motion.div 
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="md:hidden mt-2 glass rounded-[24px] p-6 flex flex-col gap-4 text-center"
+            className="md:hidden mt-2 bg-bg-section border border-white/10 rounded-2xl p-6 flex flex-col gap-4 text-center shadow-xl"
           >
-            <a href="#uslugi" onClick={() => setIsMenuOpen(false)} className="font-bold text-blue-deep py-2">Usługi</a>
-            <a href="#opinie" onClick={() => setIsMenuOpen(false)} className="font-bold text-blue-deep py-2">Opinie</a>
-            <a href="#kontakt" onClick={() => setIsMenuOpen(false)} className="font-bold text-blue-deep py-2">Kontakt</a>
-            <div className="h-px bg-white/50" />
-            <a href="tel:532821884" className="glossy-btn py-3">532 821 884</a>
+            <a href="#uslugi" onClick={() => setIsMenuOpen(false)} className="font-bold text-text-main py-2 hover:text-accent">Usługi</a>
+            <a href="#opinie" onClick={() => setIsMenuOpen(false)} className="font-bold text-text-main py-2 hover:text-accent">Opinie</a>
+            <a href="#kontakt" onClick={() => setIsMenuOpen(false)} className="font-bold text-text-main py-2 hover:text-accent">Kontakt</a>
+            <div className="h-px bg-white/5" />
+            <a href="tel:532821884" className="btn-primary py-3">532 821 884</a>
           </motion.div>
         )}
       </nav>
 
       {/* Hero Section */}
-      <section className="relative pt-12 pb-24 px-4 sm:px-8 overflow-hidden">
+      <section className="relative pt-20 pb-24 md:pt-32 px-4 sm:px-8 overflow-hidden">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12">
           <div className="lg:w-3/5 text-center lg:text-left">
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6 }}
-              className="inline-flex items-center gap-2 glass px-4 py-1.5 rounded-full mb-6 border-white/50 text-blue-deep font-bold text-sm"
+              className="inline-flex items-center gap-2 bg-accent/5 border border-accent/20 px-4 py-1.5 rounded-full mb-6 text-accent font-bold text-xs uppercase tracking-wider"
             >
-              <span className="flex h-2 w-2 rounded-full bg-teal animate-ping" />
+              <span className="flex h-2 w-2 rounded-full bg-accent animate-ping" />
               Naprawa dostępna od ręki
             </motion.div>
             
